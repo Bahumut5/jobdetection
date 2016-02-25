@@ -25,7 +25,31 @@ aside,
 	display: inline-block;
 }
 
-.account
+.profilepic {
+	position: relative;
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+	float: right;
+}
+
+.profilepic img {
+	width: 80%;
+	height: 80%;
+	display: inline;
+	margin-left: 10%;
+	margin-top: 10%;
+	border: 2px solid #D96450;
+}
+.buttons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.buttons li a {
+    display: inline-block;
+    width: 60px;
+}
 
 .content {
 	text-align: left;
