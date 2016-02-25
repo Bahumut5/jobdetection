@@ -34,21 +34,34 @@ aside,
 }
 
 .profilepic img {
-	width: 80%;
-	height: 80%;
+	max-width: 80%;
+	max-height: 80%;
+	height:auto;
+	width: auto;
 	display: inline;
 	margin-left: 10%;
 	margin-top: 10%;
 	border: 2px solid #D96450;
 }
+
 .buttons ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
+
+.buttons li {
+    float: left;
+}
+
 .buttons li a {
-    display: inline-block;
-    width: 60px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .content {
