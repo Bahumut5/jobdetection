@@ -25,6 +25,8 @@ aside,
 	display: inline-block;
 }
 
+.account
+
 .content {
 	text-align: left;
     color: #00000000;
@@ -74,11 +76,19 @@ header,
 	color: #D96450;
 	font-size: 90;
 	font-family: Algerian;
-	background-color: orange;
 	display: inline-block;
 	height: 100%;
 	width: 52%;
 	margin-top: 0;
+}
+
+.site_name img{
+	width: 80%;
+	height: 63%;
+	display: inline;
+	float: left;
+	margin-top: 0.6%;
+	margin-left: 3%;
 }
 /*
 header .container {
@@ -90,13 +100,11 @@ header .container {
 hgroup,
 
 .logo {
-	padding: 1.5% 0% 0% 0%;
 	position: relative;
 	width: 15%;
 	height: 100%;
 	display: inline-block;
 	float: left;
-	background-color: yellow;
 }
 
 .logo img{
