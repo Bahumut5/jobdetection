@@ -25,38 +25,38 @@ aside,
 	display: inline-block;
 }
 
-.profilepic {
-	position: relative;
-	width: 20%;
-	height: 100%;
-	display: inline-block;
-	float: right;
-}
 
-.profilepic img {
-	max-width: 80%;
+.nav img {
+	top: 3;
+	right:3;
+	max-width: 20%;
 	max-height: 80%;
 	height:auto;
 	width: auto;
-	display: inline;
-	margin-left: 10%;
-	margin-top: 10%;
 	border: 2px solid #D96450;
+	float: right;
+	position: absolute
 }
 
-.buttons ul {
+.nav ul {
+	width:100%;
+	height:auto;
+	max-height: 30%;
+	bottom:0;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+	position:absolute
 }
 
-.buttons li {
-    float: left;
+.nav li {
+	float:left;
+	display: inline-block;
 }
 
-.buttons li a {
+.nav li a {
     display: block;
     color: white;
     text-align: center;
