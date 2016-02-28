@@ -2,7 +2,7 @@
 <head>
 <title>Standard homepage userdirectory</title>
 <!-- Latest compiled and minified CSS -->
-<!--<link rel="stylesheet" href="css/bootstrap.css">-->
+<link rel="stylesheet" href="css/bootstrap.css">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -33,11 +33,25 @@
 			Find now:
 		</h1>
 		<hr />
+		<!--
 		<div class="left_side">
 			<h1 class="byRegion">
 			Choose your region:
 			</h1>
 			<img src="img/Map.png" width="15%" height="auto" />
+		</div> 
+		-->
+		<div class="map" id="map">
+			<script>
+			  function initMap() {
+				var mapDiv = document.getElementById('map');
+				var map = new google.maps.Map(mapDiv, {
+				  center: {lat: 52.1390387, lng: 5.4281715},
+				  zoom: 7
+				});
+			  }
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 		</div>
 		<div class="right side">
 			<h1 class="byCategory">
@@ -85,11 +99,35 @@
 				<li>Business services</li>
 			</ul>
 		</div>
+		<!-- testing -->
+		<input type="button" id="btn" value="load" />
+		<div id="d_content">
+		</div>
+		
+		<script>
+        $("#siteloader")
+            .html('<object data="pages/byCategory.html"/>');
+		</script>
+		
+		 <div> 
+		<object type="text/html" data="pages/byCategory.html" width="800px" height="600px" style="overflow:auto;border:5px ridge blue">
+		</object></div>
 		
 	</div>
 <div class="footer">
 Copyright Placeholder
 </div>
+
+<!-- Scripts -->
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#btn').click(function(){   
+        $('#div_content').load('index.html');
+     });
+});
+</script>
+
+
 </body>
 
 <!-- Latest compiled and minified JavaScript -->
