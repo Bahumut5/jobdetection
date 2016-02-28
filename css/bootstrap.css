@@ -56,6 +56,11 @@ aside,
 	display: inline-block;
 }
 
+.nav select {
+	float:left;
+	display: inline-block;
+}
+
 .nav li a {
     display: block;
     color: white;

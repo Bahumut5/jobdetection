@@ -2,7 +2,7 @@
 <head>
 <title>Standard homepage userdirectory</title>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="css/bootstrap.css">
+<!--<link rel="stylesheet" href="css/bootstrap.css">-->
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -18,8 +18,14 @@
 	<div class="nav">
 		<a href="">Login</a>
 			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">Search</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li>
+					<select onChange="window.location.href=this.value">
+						<option selected disabled>Search</option>
+						<option value="pages/byRegion.html"> By Region </option>
+						<option value="pages/byCategory.html"> By Category </option>
+						</select>
+				</li>
 				<li><a href="">About</a></li>
 				<li><a href="">Contact Us</a></li>
 			</ul>
