@@ -2,7 +2,7 @@
 <head>
 <title>Standard homepage userdirectory</title>
 <!-- Latest compiled and minified CSS -->
-<!--<link rel="stylesheet" href="css/bootstrap.css">-->
+<link rel="stylesheet" href="css/bootstrap.css">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -10,7 +10,7 @@
 <body>
 <div class="header">
 	<div class="logo">
-		<a href=""><img src="img/job_logo.png" width="5%" height="auto" /></a>
+		<a onclick="frames['iFrameContent'].location.href='pages/mainPage.html'"><img src="img/job_logo.png" width="5%" height="auto" /></a>
 	</div>
 	<div class="site_name">
 		<img src="img/banner.png" width="5%" height="auto" />
@@ -18,32 +18,44 @@
 	<div class="nav">
 		<a href="">Login</a>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li>
+				<li><a onclick="frames['iFrameContent'].location.href='pages/mainPage.html'">Home</a></li>
+				<!--<li>
 					<select onChange="window.location.href=this.value">
 						<option selected disabled>Search</option>
 						<option value="pages/byRegion.html"> By Region </option>
 						<option value="pages/byCategory.html"> By Category </option>
 						</select>
+				</li>-->
+				<li>
+					<a href="#">Search &#9662;</a>
+					<ul class="dropdown">
+						<li><a onclick="frames['iFrameContent'].location.href='pages/byRegion.html'">By region</a></li>
+						<li><a onclick="frames['iFrameContent'].location.href='pages/byCategory.html'">By category</a></li>
+					</ul>
 				</li>
-				<li><a href="">About</a></li>
-				<li><a href="">Contact Us</a></li>
+				<li><a onclick="frames['iFrameContent'].location.href='pages/about.html'">About</a></li>
+				<li><a onclick="frames['iFrameContent'].location.href='pages/contactUs.html'">Contact Us</a></li>
 			</ul>
 			<img src="img/profile_pic.jpg" width="5%" height="auto" />
 	</div>
 </div>
-<div class="content">
-	<object type="text/html" data="pages/mainPage.html" class="content"></object>
-</div>
+
+<iframe name="iFrameContent" class="iFrameCSS" src="pages/mainPage.html"></iframe>
+
+<!--
+<object type="text/html" data="pages/mainPage.html" class="content"></object>
+-->
 
 <div class="footer">
 Copyright Placeholder
 </div>
 
-</body>
-
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.js"></script>
+
+</body>
+
+
 
 </html>
