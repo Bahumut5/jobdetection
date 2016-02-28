@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Standard homepage userdirectory</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="../css/bootstrap-theme.css">
+</head>
+<body>
+	<div class="inner">
+	<div class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+    </ul>
+</div>
+		<h1>
+			The best town for your line of work? <br>
+			The most searched specialties in your region? <br>
+			Find now:
+		</h1>
+		<hr />
+		<div class="main">
+			<div class="map" id="map">
+				<script>
+				  function initMap() {
+					var mapDiv = document.getElementById('map');
+					var map = new google.maps.Map(mapDiv, {
+					  center: {lat: 52.1390387, lng: 5.4281715},
+					  zoom: 7
+					});
+				  }
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+			</div>
+			<div>
+			<object type="text/html" data="byCategory.html" class="div-map-right"></object>
+			</div>
+		</div>
+		<div class="chart-bottom">
+		lol
+		</div>
+	</div>
+	
+</body>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+
+</html>

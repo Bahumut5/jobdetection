@@ -32,111 +32,18 @@
 			<img src="img/profile_pic.jpg" width="5%" height="auto" />
 	</div>
 </div>
-	<div class="content">
-		<h1 class="intro">
-			The best town for your line of work? <br>
-			The most searched specialties in your region? <br>
-			Find now:
-		</h1>
-		<hr />
-		<!--
-		<div class="left_side">
-			<h1 class="byRegion">
-			Choose your region:
-			</h1>
-			<img src="img/Map.png" width="15%" height="auto" />
-		</div> 
-		-->
-		<div class="map" id="map">
-			<script>
-			  function initMap() {
-				var mapDiv = document.getElementById('map');
-				var map = new google.maps.Map(mapDiv, {
-				  center: {lat: 52.1390387, lng: 5.4281715},
-				  zoom: 7
-				});
-			  }
-			</script>
-			<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
-		</div>
-		<div class="right side">
-			<h1 class="byCategory">
-			Choose your category:
-			</h1>
-			<ul>
-				<li>Accountancy</li>
-				<li>Advice / Consultancy</li>
-				<li>Waste and Environment</li>
-				<li>Automotive</li>
-				<li>Banks / Financial Services</li>
-				<li>Security / Surveillance</li>
-				<li>Construction / Installation</li>
-				<li>Chemical / Petrochemical</li>
-				<li>Retail</li>
-				<li>Electronics</li>
-				<li>Energy / Gas / Water</li>
-				<li>Facility management</li>
-				<li>Pharmacy</li>
-				<li>Fashion / Textiles / Cosmetics</li>
-				<li>Education / Training</li>
-				<li>Government / Non-profit</li>
-				<li>Remaining</li>
-				<li>People transport</li>
-				<li>Advertising / PR / Communications</li>
-				<li>Sports / Recreation / Tourism</li>
-				<li>FMCG</li>
-				<li>Health / Wellness</li>
-				<li>Retail / Wholesale</li>
-				<li>Horeca</li>
-				<li>ICT</li>
-				<li>Industry</li>
-				<li>Internet</li>
-				<li>Legal services</li>
-				<li>Arts / Culture / Entertainment</li>
-				<li>Agriculture / Forestry / Fishing</li>
-				<li>Real Estate / Property</li>
-				<li>Maritime</li>
-				<li>Media / Publishing / TV</li>
-				<li>Technical</li>
-				<li>Telecom</li>
-				<li>Transportation / Warehousing / Distribution</li>
-				<li>Programming / Secondment / S & S</li>
-				<li>Insurance</li>
-				<li>Business services</li>
-			</ul>
-		</div>
-		<!-- testing -->
-		<input type="button" id="btn" value="load" />
-		<div id="d_content">
-		</div>
-		
-		<script>
-        $("#siteloader")
-            .html('<object data="pages/byCategory.html"/>');
-		</script>
-		
-		 <div> 
-		<object type="text/html" data="pages/byCategory.html" width="800px" height="600px" style="overflow:auto;border:5px ridge blue">
-		</object></div>
-		
-	</div>
+<div class="content">
+	<object type="text/html" data="pages/mainPage.html" class="content"></object>
+</div>
+
 <div class="footer">
 Copyright Placeholder
 </div>
-
-<!-- Scripts -->
-<script type="text/javascript">
-$(document).ready(function(){
-    $('#btn').click(function(){   
-        $('#div_content').load('index.html');
-     });
-});
-</script>
-
 
 </body>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
 
 </html>
