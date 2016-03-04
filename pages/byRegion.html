@@ -2,14 +2,13 @@
 <head>
 <title>Standard homepage userdirectory</title>
 <!-- Latest compiled and minified CSS -->
-<!--<link rel="stylesheet" href="css/bootstrap.css">-->
+<link rel="stylesheet" href="../css/bootstrap.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="css/bootstrap-theme.css">
 </head>
 <body>
 	<div class="leftSide">
-		<h1> Please select a Region below:</h1>
+		<div class="left-bar">
+		<center><h1> Please select a Region below:</h1></center>
 		<ul>
 			<li><img src="../img/blueBox.png" width="1%" height="auto"/><a href="Regions/region_Groningen.html">Groningen</a></li>
 			<li><img src="../img/blueBox.png" width="1%" height="auto" /><a href="Regions/region_Assen.html">Assen</a></li>
@@ -20,7 +19,7 @@
 			<li><img src="../img/blueBox.png" width="1%" height="auto" /><a href="Regions/region_Amsterdam.html">Amsterdam</a></li>
 			<li><img src="../img/blueBox.png" width="1%" height="auto" /><a href="Regions/region_Utrecht.html">Utrecht</a></li>
 			<li><img src="../img/blueBox.png" width="1%" height="auto" /><a href="Regions/region_DenHague.html">Den Hague</a></li>
-			<li><img src="../img/blueBox.png" width="1%" height="auto" /><a href="Regions/region_Amhem.html">Amhem</a></li>
+			<li><a onclick="frames['iFrameRegion'].location.href='Regions/region_Arnhem.html'">Arnhem</a></li>
 			<li><img src="../img/blueBox.png" width="1%" height="auto" /><a href="Regions/region_Rotterdam.html">Rotterdam</a></li>
 			<li><img src="../img/blueBox.png" width="1%" height="auto" /><a href="Regions/region_Nijmegen.html">Nijmegen</a></li>
 			<li><img src="../img/blueBox.png" width="1%" height="auto" /><a href="Regions/region_Eindhoven.html">Eindhoven</a></li>
@@ -30,10 +29,9 @@
 		<h1> Can't find it? Search it: </h1>
 		<input type="text" name="region" placeholder="search">
 		<a href=""><img src="../img/searchButton.png" width="3%" /></a>
+		</div>
 	</div>
-	<div class="rightSide">
-		<h1> PLEASE CHOOSE REGION </h1>
-	</div>
+	<iframe name="iFrameRegion" class="iFrameleftnav" src="contactUs/contact.html"></iframe>
 	
 </body>
 
