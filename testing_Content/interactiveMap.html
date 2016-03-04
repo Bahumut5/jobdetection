@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!--<script type="text/javascript">
+      google.charts.load('current', {'packages':['geochart']});
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Province', 'IT-Jobs'],
+          ['Groningen', 200],
+          ['Friesland', 300],
+          ['Drenthe', 400],
+          ['Overijssel', 500],
+          ['Flevoland', 600],
+          ['Gelderland', 50],
+		  ['Utrecht', 1200],
+		  ['Noord-Holland', 700],
+		  ['Zuid-Holland', 250],
+		  ['Zeeland', 400],
+		  ['Noord-Brabant', 1500],
+		  ['Limburg', 700]
+        ]);
+
+        var options = {
+			resolution: 'provinces',
+			region: 'NL'
+		};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+		
+        chart.draw(data, options);
+      }
+	</script>-->
+	<script type="text/javascript">  
+		google.load('visualization', '1', {'packages': ['geomap']});
+		google.setOnLoadCallback(function() {
+		  var data = new google.visualization.DataTable();
+		  data.addRows(1);
+		  data.addColumn('string', 'Code');
+		  data.addColumn('number', 'Job-Count');
+		  data.addColumn('string', 'Provinces');
+		  data.setValue(0, 0, 'Noord-Brabant');
+		  data.setValue(0, 1, 400);
+		  data.setValue(0, 2, 'Noord-Brabant');
+		  var options = {
+			resolution: 'provinces',
+			region: 'NL'
+		  };
+		  options['dataMode'] = 'regions';
+		  var container = document.getElementById('map');
+		  var mymap = new google.visualization.GeoMap(container);
+		  google.visualization.events.addListener(mymap, 'regionClick',function(e) {
+			var rowindex = data.getFilteredRows([{column: 0, value: e['resolution']}]);  
+			var count = data.getValue(rowindex[0],1);
+			if (count > 0) {
+			  alert('count: '+count);  
+			  location.href = "/somehwere?"+e['resolution']
+			}
+		  });
+		  mymap.draw(data, options);              
+		});  
+	</script>  
+  </head>
+  <body>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+	<div id="map" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
