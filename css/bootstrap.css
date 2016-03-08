@@ -82,6 +82,9 @@ aside,
 	z-index: 50;
 	float: right;
 }
+.iFrameCategory{
+	height:100%;
+}
 
 .right-bar {
 	position:relative;
@@ -106,7 +109,7 @@ aside,
     border: 1px solid #ccc;
     background-color: #f3f3f3;
 	display: inline;
-	overflow: hidden;
+	overflow: allowed;
 	float: left;
 }
 
