@@ -15,108 +15,6 @@ body {
 article,
 aside,
 
-.main-leftnav {
-	float: left;
-}
-
-.login {
-	float: right;
-	position: relative;
-	display: inline-block;
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-	right: 20%;
-	top: 20%;
-	width: 20%;
-	text-align: center;
-	color: white;
-}
-
-.login a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-	list-style-type: none;
-}
-
-.login a:hover{
-	color:white;
-	text-decoration:none;
-}
-
-.iFrameCSS {
-	text-align: left;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 15%;
-	bottom: 5%;
-	overflow-x: hidden;
-	width: 100%;
-	height:80%;
-	display: inline-block;
-	z-index: 50;
-}
-
-.iFrameleftnav {
-	text-align: left;
-	position: relative;
-	left: 0;
-	right: 0;
-	overflow-x: hidden;
-	width: 80%;
-	height:100%;
-	display: inline;
-	z-index: 50;
-}
-
-.iFramerightnav {
-	text-align: left;
-	position: relative;
-	left: 0;
-	right: 0;
-	overflow-x: hidden;
-	width: 60%;
-	height:100%;
-	display: inline;
-	z-index: 50;
-	float: right;
-}
-.iFrameCategory{
-	height:100%;
-}
-
-.right-bar {
-	position:relative;
-    width:40%;
-    height:100%;
-    border: 1px solid #ccc;
-    background-color: #f3f3f3;
-	display: inline;
-	overflow: hidden;
-	float: right;
-}
-
-.right-bar img {
-	width: 100%;
-	height: 100%;
-}
-
-.left-bar {
-	position:relative;
-    width:20%;
-    height: 100%;
-    border: 1px solid #ccc;
-    background-color: #f3f3f3;
-	display: inline;
-	overflow: allowed;
-	float: left;
-}
-
 .left-bar-region {
 	position:relative;
     width:20%;
@@ -128,7 +26,7 @@ aside,
 	float: left;
 }
 
-.left-bar ul {
+.left-bar-region ul {
 	list-style: none;
 	background-color: #333;
 	text-align: left;
@@ -136,7 +34,7 @@ aside,
 	margin: 0;
 }
 
-.left-bar ul li {
+.left-bar-region ul li {
 	list-style: none;
 	background-color: #333;
 	text-align: left;
@@ -145,7 +43,7 @@ aside,
 	width: 100%;
 }
 
-.left-bar .dropdown {
+.left-bar-region .dropdown {
 	clear: both;
 	width: 224%;
 	height: 40px;
@@ -157,213 +55,16 @@ aside,
 	list-style: none;
 }
 
-.left-bar a {
+.left-bar-region a {
 	color: #FFF;
 	background-color: #333;
 	z-index: 999;
 }
 
-.div-bottom {
-	float: bottom;
-	position: relative;
-	display: inline-block;
-	text-align: center;
-}
-
-.nav {
-	position: relative;
-	float: right;
-	bottom: 0;
-	width: 33%;
-	height: 100%;
-	display: inline-block;
-}
-
-.nav img {
-	top: 3;
-	right:3;
-	max-width: 20%;
-	max-height: 80%;
-	height:auto;
-	width: auto;
-	border: 2px solid #D96450;
-	float: right;
-	position: absolute
-}
-
-.nav ul {
-	width:100%;
-	height:40px;
-	bottom:0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-	position:absolute
-}
-
-.nav ul li {
-	float:left;
-	display: inline-block;
-}
-
-.nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.nav .dropdown {
-	bottom: 116%;
-	clear: both;
-	width:300%;
-	height:40px;
-	position:absolute;
-	background-color: #333;
-}
-.nav .dropdown li{
-	position:relative;
-	display: inline-block;
-	float: left;
-	background-color: #333;
-	width: 50%;
-}
-
-
-.chart-bottom {
-	width: 100%;
-	height: 55%;
-	position: relative;
-	background-color: yellow;
-	top: 60%;
-}
-
-.content {
-	text-align: left;
-    color: #00000000;
-    background: #ffffffff;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 15%;
-	bottom: 5%;
-	overflow: scroll;
-	overflow-x: hidden;
-	width: 100%;
-	height:80%;
-	display: inline-block;
-}
-
-.inner {
-	position: absolute;
-	overflow: scroll;
-	overflow-x: hidden;
-	width: 100%;
+.right-side-region{
+	width:80%;
 	height:100%;
-	display: inline;
-	padding: 0;
-	margin: 0;
-	border-collapse: collapse;
-}
-
-details,
-figcaption,
-figure,
-footer,
-
-.footer {
-	text-align: right;
-    color: #fff;
-    background: #66c1d6;
-	position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 5%;
-	overflow: hidden;
-}
-
-header,
-
-.header {
-    background: #66c1d6;
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-    left: 0;
-    right: 0;
-	bottom: 85%;
-}
-
-.site_name {
-	position: relative;
-	color: #D96450;
-	font-size: 90;
-	font-family: Algerian;
-	display: inline-block;
-	height: 100%;
-	width: 52%;
-	margin-top: 0;
-}
-
-.site_name img{
-	width: 80%;
-	height: 63%;
-	display: inline;
-	float: left;
-	margin-top: 0.6%;
-	margin-left: 3%;
-}
-/*
-header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-*/
-
-hgroup,
-
-.logo {
-	position: relative;
-	width: 15%;
-	height: 100%;
-	display: inline-block;
-	float: left;
-}
-
-.logo:hover {
-	cursor: pointer;
-}
-
-.logo img{
-	width: 95%;
-	height: 95%;
-	display: inline;
-	float: left;
-}
-
-.main {
-	width: 100%;
-	height: 60%;
-	display: inline-block;
-	position: absolute;
-}
-
-#map {
-	width: 50%;
-	height: 100%;
-	display: inline-block;
-	float: left;
-	position: relative;
-}
-
-#divMap {
-	float: left;
-	height: 100%;
-	width: 50%;
-	display: inline-block;
+	float:left
 }
 
 main,
