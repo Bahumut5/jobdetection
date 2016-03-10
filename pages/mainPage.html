@@ -4,9 +4,12 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="../css/bootstrap.css">
 
+<script src="../js/bootstrap.js"></script>
+<script src="../js/jquery-1.12.1.js"></script> 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-	<script type="text/javascript">  
+
+<script type="text/javascript">  
 google.load('visualization', '1', {'packages': ['geochart']});
 google.setOnLoadCallback(drawRegionsMap);
 
@@ -44,19 +47,21 @@ function drawRegionsMap() {
 			resolution: 'provinces',
 			region: 'NL',
 			width: '100%',
-			height: '100%'
+			height: '100%',
 		  };
     var container = document.getElementById('map');
     var geochart = new google.visualization.GeoChart(container);
     
     // register the 'select' event handler
-google.visualization.events.addListener(geochart, 'select', function () {
+		google.visualization.events.addListener(geochart, 'select', function () {
         // GeoChart selections return an array of objects with a row property; no column information
         var selection = geochart.getSelection();
 		//Leave the next part for testing purpose!
         //alert(data.getValue(selection[0].row, 0));
-        window.open("Regions/" + data.getValue(selection[0].row, 0) + "/province.html", "iFrameMap");
-
+		//window.open("Regions/" + data.getValue(selection[0].row, 0) + "/province.html", "#divMap");
+		$("#divMap").load("Regions/" + data.getValue(selection[0].row, 0) + "/province.html"), function() {
+			alert('Load was performed');
+		};
     });
     
     geochart.draw(data, options);
@@ -65,29 +70,10 @@ google.visualization.events.addListener(geochart, 'select', function () {
 </head>
 <body>
 	<div class="inner">
-		<div class="main-leftnav">
-				<div id="map" class="map">
-				<!--<script>
-				  function initMap() {
-					var mapDiv = document.getElementById('map');
-					var map = new google.maps.Map(mapDiv, {
-					  center: {lat: 52.1390387, lng: 5.4281715},
-					  zoom: 8
-					});
-				  }
-				</script>
-				<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>-->
-				</div>
-			<div>
-			<iFrame name="iFrameMap" type="text/html" data="byCategory.html" class="div-map-right" src="../pages/byRegion.html"></iFrame>
-			</div>
-		</div>
+				<div id="map"></div>
+			<div id="divMap"></div>
+			<!--<iFrame name="iFrameMap" type="text/html" data="byCategory.html" class="div-map-right" src="../pages/byRegion.html"></iFrame>-->
 	</div>
 	
 </body>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/bootstrap.js"></script>
-
 </html>
