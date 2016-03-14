@@ -2,50 +2,63 @@
 <head>
 <title>Job Detection</title>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<script src="../js/jquery-1.12.1.js"></script> 
+<script src="../js/bootstrap.js"></script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+
 </head>
 <body>
-<div class="header">
-	<div class="logo">
-		<a onclick="frames['iFrameContent'].location.href='pages/mainPage.html'"><img src="img/job_logo.png" width="5%" height="auto" /></a>
+	<div class="header">
+		<div class="logo">
+			<a onclick="frames['iFrameContent'].location.href='pages/mainPage.html'"><img src="img/job_logo.png" width="5%" height="auto" /></a>
+		</div>
+		<div class="site_name">
+			<img src="img/banner.png" width="5%" height="auto" />
+		</div>
+		<div class="nav">
+		<div class="login">
+			<li><a href="">Login</a></li>
+		</div>
+				<ul>
+					<li><a onclick="frames['iFrameContent'].location.href='pages/mainPage.html'">Home</a></li>
+					<li>
+						<a href="#">Search &#9652;</a>
+						<ul class="dropdown">
+							<li><a onclick="frames['iFrameContent'].location.href='pages/byRegion.html'">By region</a></li>
+							<li><a onclick="frames['iFrameContent'].location.href='pages/byCategory.html'">By category</a></li>
+						</ul>
+					</li>
+					<li><a onclick="frames['iFrameContent'].location.href='pages/about.html'">About</a></li>
+					<li><a onclick="frames['iFrameContent'].location.href='pages/contactUs.html'">Contact Us</a></li>
+				</ul>
+				<img src="img/profile_pic.jpg" width="5%" height="auto" />
+		</div>
 	</div>
-	<div class="site_name">
-		<img src="img/banner.png" width="5%" height="auto" />
+
+	<!--<iframe name="iFrameContent" class="iFrameCSS" src="pages/mainPage.html"></iframe>-->
+	<div id="content" class="iFrameCSS">
+		<button type="button" onclick="loadPage('mainPage')">
+			Change Content
+		</button>
 	</div>
-	<div class="nav">
-	<div class="login">
-		<li><a href="">Login</a></li>
+	<!--
+	<object type="text/html" data="pages/mainPage.html" class="content"></object>
+	-->
+
+	<div class="footer">
+	&#169; Copyright Naydenov & Vromans B.V.
 	</div>
-			<ul>
-				<li><a onclick="frames['iFrameContent'].location.href='pages/mainPage.html'">Home</a></li>
-				<li>
-					<a href="#">Search &#9652;</a>
-					<ul class="dropdown">
-						<li><a onclick="frames['iFrameContent'].location.href='pages/byRegion.html'">By region</a></li>
-						<li><a onclick="frames['iFrameContent'].location.href='pages/byCategory.html'">By category</a></li>
-					</ul>
-				</li>
-				<li><a onclick="frames['iFrameContent'].location.href='pages/about.html'">About</a></li>
-				<li><a onclick="frames['iFrameContent'].location.href='pages/contactUs.html'">Contact Us</a></li>
-			</ul>
-			<img src="img/profile_pic.jpg" width="5%" height="auto" />
-	</div>
-</div>
 
-<iframe name="iFrameContent" class="iFrameCSS" src="pages/mainPage.html"></iframe>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.js"></script> 
+	<script src="/pages/scripts/main.js"></script>
 
-<!--
-<object type="text/html" data="pages/mainPage.html" class="content"></object>
--->
-
-<div class="footer">
-&#169; Copyright Naydenov & Vromans B.V.
-</div>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap.js"></script>
-
+	
 </body>
 
 

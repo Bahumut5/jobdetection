@@ -14,7 +14,7 @@ body {
 }
 article,
 aside,
-
+/*Everything below up until the comment where we say "bootstrap starts here" was defined by ourselves and is not part of the bootstrap */
 .main-leftnav {
 	float: left;
 }
@@ -365,6 +365,8 @@ hgroup,
 	width: 50%;
 	display: inline-block;
 }
+
+/* THE BOOTSTRAP STARTS HERE! */
 
 main,
 menu,
