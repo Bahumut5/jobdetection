@@ -9,6 +9,7 @@ var container = document.getElementById('map');
 var geochart = new google.visualization.GeoChart(container);
 var mapData = document.getElementById("divMap");
 var currentProvinceData = {};
+var currentSelectedProvince = {};
 
 function loadData()
 	{
@@ -52,7 +53,7 @@ function loadProvinceData(province)
 		
 		if (xhttp.readyState == 4 && xhttp.status == 200) {
 			console.log(xhttp.responseText);
-			currentProvinceData.Data = JSON.parse(xhttp.responseText);//eval(xhttp.responseText);//
+			currentProvinceData.Data = JSON.parse(xhttp.responseText);//eval(xhttp.responseText);
 			drawProvinceData();
 		}
 	};
@@ -60,17 +61,18 @@ function loadProvinceData(province)
 	xhttp.send();
 	
 }	
-function drawProvinceData()
+function drawProvinceData(province)
 {
+	
 	var data = new google.visualization.arrayToDataTable(currentProvinceData.Data);
 
         var options = {
-			title: 'Drenthe',
+			title: currentProvinceData.Title,
 			width: '100%',
 			heigth: '100%',
 			legend: { position: 'none' },
 			colors: ['#D86450'],
-			chart: { title: 'Drenthe',
+			chart: { title: currentProvinceData.Title,
 					subtitle: 'Jobs' },
 			bars: 'horizontal', // Required for Material Bar Charts.
 			axes: {

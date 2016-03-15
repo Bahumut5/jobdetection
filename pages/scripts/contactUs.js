@@ -3,7 +3,7 @@
 		<li>
 			<a href="#">Refreshing of Charts &#9662;</a>
 			<ul class="dropdown">
-				<li><a onclick="loadPage('mainPage')>">"How often are charts refreshed?</a></li>
+				<li><a onclick="frames['iFrameContent'].location.href='byRegion.html'">How often are charts refreshed?</a></li>
 				<li><a onclick="frames['iFrameContent'].location.href='byCategory.html'">Where is the information coming from?</a></li>
 			</ul>
 		</li>
@@ -22,5 +22,5 @@
 	<input type='button' name='contact' value='Contact us' class='contact demo'/>
 </div>
 </div>
-<div id="content" class="iFrameleftnav">
+<div id="CcntentContact" class="iFrameleftnav">
 </div>

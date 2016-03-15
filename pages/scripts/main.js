@@ -3,6 +3,22 @@ var mainPage = {
 	title: "mainPage",
 	hasJS: true
 };
+var byRegion = {
+	title: "byRegion",
+	hasJS: true
+};
+var byCategory = {
+	title: "byCategory",
+	hasJS: true
+};
+var about = {
+	title: "about",
+	hasJS: true
+};
+var contactUs = {
+	title: "contactUs",
+	hasJS: true
+};
 	
 function loadDoc(page) {
 
@@ -37,6 +53,18 @@ function loadPage(page)
 	{
 		case "mainPage":
 		obj = mainPage;
+		break;
+		case "byRegion":
+		obj = byRegion;
+		break;
+		case "byCategory":
+		obj = byCategory;
+		break;
+		case "contactUs":
+		obj = contactUs;
+		break;
+		case "about":
+		obj = about;
 		break;
 	}
 	

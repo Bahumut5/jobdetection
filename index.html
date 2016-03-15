@@ -11,10 +11,10 @@
 
 
 </head>
-<body>
+<body onload="loadPage('mainPage')">
 	<div class="header">
 		<div class="logo">
-			<a onclick="frames['iFrameContent'].location.href='pages/mainPage.html'"><img src="img/job_logo.png" width="5%" height="auto" /></a>
+			<a onclick="loadPage('mainPage')"><img src="img/job_logo.png" width="5%" height="auto" /></a>
 		</div>
 		<div class="site_name">
 			<img src="img/banner.png" width="5%" height="auto" />
@@ -24,30 +24,24 @@
 			<li><a href="">Login</a></li>
 		</div>
 				<ul>
-					<li><a onclick="frames['iFrameContent'].location.href='pages/mainPage.html'">Home</a></li>
+					<li><a onclick="loadPage('mainPage')">Home</a></li>
 					<li>
 						<a href="#">Search &#9652;</a>
 						<ul class="dropdown">
-							<li><a onclick="frames['iFrameContent'].location.href='pages/byRegion.html'">By region</a></li>
-							<li><a onclick="frames['iFrameContent'].location.href='pages/byCategory.html'">By category</a></li>
+							<li><a onclick="loadPage('byRegion')">By region</a></li>
+							<li><a onclick="loadPage('byCategory')">By category</a></li>
 						</ul>
 					</li>
-					<li><a onclick="frames['iFrameContent'].location.href='pages/about.html'">About</a></li>
-					<li><a onclick="frames['iFrameContent'].location.href='pages/contactUs.html'">Contact Us</a></li>
+					<li><a onclick="loadPage('about')">About</a></li>
+					<li><a onclick="loadPage('contactUs')">Contact Us</a></li>
 				</ul>
 				<img src="img/profile_pic.jpg" width="5%" height="auto" />
 		</div>
 	</div>
 
-	<!--<iframe name="iFrameContent" class="iFrameCSS" src="pages/mainPage.html"></iframe>-->
 	<div id="content" class="iFrameCSS">
-		<button type="button" onclick="loadPage('mainPage')">
-			Change Content
-		</button>
 	</div>
-	<!--
-	<object type="text/html" data="pages/mainPage.html" class="content"></object>
-	-->
+
 
 	<div class="footer">
 	&#169; Copyright Naydenov & Vromans B.V.
