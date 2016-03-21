@@ -59,7 +59,6 @@ function loadProvinceData(province)
 	};
 	xhttp.open("GET", "pages/Regions/" + province + "/provinceData.json", true);
 	xhttp.send();
-	
 }	
 function drawProvinceData(province)
 {

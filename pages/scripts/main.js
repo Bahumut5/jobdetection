@@ -19,6 +19,12 @@ var contactUs = {
 	title: "contactUs",
 	hasJS: true
 };
+var accountancy = {
+	title: "Accountancy"
+};
+	
+var pageScope = {};
+	
 	
 function loadDoc(page) {
 
@@ -28,7 +34,10 @@ function loadDoc(page) {
 		  document.getElementById("content").innerHTML = xhttp.responseText;
 		}
 	  };
-	  xhttp.open("GET", "pages/" + page + ".html", true);
+	  
+	  var rnd = Math.random().toString();
+	  var rnd = rnd.substring(rnd.indexOf(".") + 1);
+	  xhttp.open("GET", "pages/" + page + ".html?rnd=" + rnd, true);
 	  xhttp.send();	  
 }
 
@@ -40,11 +49,12 @@ function loadJS(page) {
 		  eval(xhttp.responseText);
 		}
 	  };
-	  xhttp.open("GET", "pages/scripts/" + page + ".js", true);
+	  
+	  var rnd = Math.random().toString();
+	  var rnd = rnd.substring(rnd.indexOf(".") + 1);
+	  xhttp.open("GET", "pages/scripts/" + page + ".js?rnd=" + rnd, true);
 	  xhttp.send();	 
-	
 }
-
 
 function loadPage(page)
 {
@@ -69,6 +79,8 @@ function loadPage(page)
 	}
 	
 	loadDoc(obj.title);
+	
+	pageScope = {};
 	if(obj.hasJS)
 		loadJS(obj.title);
 }
