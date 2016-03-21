@@ -1,16 +1,16 @@
 var accountancy = {
-	title: "Accountancy",
+	title: "accountancy",
 };
 var advertisingPRCommunications = {
 	title: "advertisingPRCommunications",
 };
-var advice_Consultancy = {
+var adviceConsultancy = {
 	title: "adviceConsultancy",
 };
-var agriculture_Forestry_Fishing = {
+var agricultureForestryFishing = {
 	title: "agricultureForestryFishing",
 };
-var artsCulture_Entertainment = {
+var artsCultureEntertainment = {
 	title: "artsCultureEntertainment",
 };
 var automotive = {
@@ -23,7 +23,7 @@ var businessServices = {
 	title: "businessServices",
 };
 var chemicalPetrochemical = {
-	title: "contactUs",
+	title: "chemicalPetrochemical",
 };
 var constructionInstallation = {
 	title: "constructionInstallation",
@@ -134,22 +134,123 @@ function loadCat(category)
 	var obj = undefined;
 	switch(category)
 	{
-		case "Accountancy":
+		case "accountancy":
 		obj = accountancy;
 		break;
-		case "byRegion":
-		obj = byRegion;
+		case "advertisingPRCommunications":
+		obj = advertisingPRCommunications;
 		break;
-		case "byCategory":
-		obj = byCategory;
+		case "adviceConsultancy":
+		obj = adviceConsultancy;
 		break;
-		case "contactUs":
-		obj = contactUs;
+		case "agricultureForestryFishing":
+		obj = agricultureForestryFishing;
 		break;
-		case "about":
-		obj = about;
+		case "artsCultureEntertainment":
+		obj = artsCultureEntertainment;
 		break;
-
+		case "automotive":
+		obj = automotive;
+		break;
+		case "banksFinancialServices":
+		obj = banksFinancialServices;
+		break;
+		case "businessServices":
+		obj = businessServices;
+		break;
+		case "chemicalPetrochemical":
+		obj = chemicalPetrochemical;
+		break;
+		case "constructionInstallation":
+		obj = constructionInstallation;
+		break;
+		case "educationTraining":
+		obj = educationTraining;
+		break;
+		case "electronics":
+		obj = electronics;
+		break;
+		case "energyGasWater":
+		obj = energyGasWater;
+		break;
+		case "facilityManagement":
+		obj = facilityManagement;
+		break;
+		case "fashionTextilesCosmetics":
+		obj = fashionTextilesCosmetics;
+		break;
+		case "FMCG":
+		obj = FMCG;
+		break;
+		case "governmentNonprofit":
+		obj = governmentNonprofit;
+		break;
+		case "healthWellness":
+		obj = healthWellness;
+		break;
+		case "horeca":
+		obj = horeca;
+		break;
+		case "ICT":
+		obj = ICT;
+		break;
+		case "industry":
+		obj = industry;
+		break;
+		case "insurance":
+		obj = insurance;
+		break;
+		case "internet":
+		obj = internet;
+		break;
+		case "legalServices":
+		obj = legalServices;
+		break;
+		case "maritime":
+		obj = maritime;
+		break;
+		case "mediaPublishingTV":
+		obj = mediaPublishingTV;
+		break;
+		case "peopleTransport":
+		obj = peopleTransport;
+		break;
+		case "pharmacy":
+		obj = pharmacy;
+		break;
+		case "programmingSecondmentS&S":
+		obj = programmingSecondmentSS;
+		break;
+		case "realEstateProperty":
+		obj = realEstateProperty;
+		break;
+		case "remaining":
+		obj = remaining;
+		break;
+		case "retail":
+		obj = retail;
+		break;
+		case "retailWholesale":
+		obj = retailWholesale;
+		break;
+		case "securitySurveillance":
+		obj = securitySurveillance;
+		break;
+		case "sportsRecreationTourism":
+		obj = sportsRecreationTourism;
+		break;
+		case "technical":
+		obj = technical;
+		break;
+		case "telecom":
+		obj = telecom;
+		break;
+		case "transportationWarehousingDistribution":
+		obj = transportationWarehousingDistribution;
+		break;
+		case "wasteAndEnvironment":
+		obj = wasteAndEnvironment;
+		break;
 	}
 	loadCategory(obj.title);
 }
