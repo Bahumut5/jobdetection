@@ -98,7 +98,7 @@ ul{
 	left: 0;
 	right: 0;
 	overflow-x: hidden;
-	width: 80%;
+	width:100%;
 	height:100%;
 	display: inline;
 	z-index: 50;
@@ -405,5 +405,12 @@ hgroup,
 	float: left;
 	height: 100%;
 	width: 50%;
+	display: inline-block;
+}
+
+#contentRegion {
+	float: left;
+	height: 100%;
+	width: 70%;
 	display: inline-block;
 }
