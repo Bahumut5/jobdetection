@@ -2,6 +2,7 @@
 <head>
 <title>Job Detection</title>
 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap.css">
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -18,7 +19,7 @@
 		</div>
 		<div class="nav">
 		<div class="login">
-			<li><a href="">Login</a></li>
+			<li><a onclick="loadPage('loginPage')">Login</a></li>
 		</div>
 				<ul>
 					<li><a onclick="loadPage('mainPage')">Home</a></li>
@@ -43,7 +44,9 @@
 	<div class="footer">
 	&#169; Copyright Naydenov & Vromans B.V.
 	</div>
-
+	
+	
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="pages/scripts/main.js"></script>
 </body>
 </html>

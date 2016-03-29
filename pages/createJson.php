@@ -4,7 +4,7 @@
 	or die("Error " . mysqli_error($connection));
 
     //fetch table rows from mysql db
-    $sql = "select * from jobs where province = Groningen";
+    $sql = "select jobName, amount from jobs where province = 'Groningen'";
     $result = mysqli_query($connection, $sql) 
 	or die("Error in Selecting " . mysqli_error($connection));
 
@@ -15,10 +15,17 @@
         $province[] = $row;
     }
     //write to json file
-    $fp = fopen('provinceData.json', 'w');
+    $fp = fopen('provinceData.json','w');
     fwrite($fp, json_encode($province));
     fclose($fp);
+	
+	//$code = 'Just testing';
+	//$openFile = fopen("test.txt","w");
+    //fwrite($openFile, $code);
+    //fclose($openFile);
 
+	echo json_encode($province);
+	
     //close the db connection
     mysqli_close($connection);
 ?>
