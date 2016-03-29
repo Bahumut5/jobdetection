@@ -434,13 +434,13 @@ hgroup,
 
 .loginform a {
   text-decoration: none;
-  color: #1ab188;
+  color: #66C1D6;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
 .loginform a:hover {
-  color: #179b77;
+  color: #36aec9;
 }
 
 .loginform .form {
@@ -487,12 +487,12 @@ hgroup,
 }
 
 .loginform .tab-group li a:hover {
-  background: #179b77;
+  background: #36aec9;
   color: #ffffff;
 }
 
 .loginform .tab-group .active a {
-  background: #1ab188;
+  background: #66C1D6;
   color: #ffffff;
 }
 
@@ -522,7 +522,7 @@ hgroup,
 
 .loginform label .req {
   margin: 2px;
-  color: #1ab188;
+  color: #66C1D6;
 }
 
 .loginform label.active {
@@ -557,7 +557,7 @@ hgroup,
 
 .loginform input:focus, textarea:focus {
   outline: 0;
-  border-color: #1ab188;
+  border-color: #66C1D6;
 }
 
 .loginform textarea {
@@ -595,7 +595,7 @@ hgroup,
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  background: #1ab188;
+  background: #66C1D6;
   color: #ffffff;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -603,7 +603,7 @@ hgroup,
 }
 
 .loginform .button:hover, .button:focus {
-  background: #179b77;
+  background: #36aec9;
 }
 
 .loginform .button-block {

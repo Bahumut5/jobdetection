@@ -1,6 +1,6 @@
 <?php
  $db_host = "localhost";
- $db_name = "dbi350063";
+ $db_name = "jobdetection";
  $db_user = "root";
  $db_pass = "";
  try{

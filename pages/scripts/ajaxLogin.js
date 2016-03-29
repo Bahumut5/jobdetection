@@ -7,7 +7,14 @@ $(document).ready(function() {
       data: data,
       success: function(response) {
         console.log(response);
-      }
+		if(response === 'ok-you logged in'){
+		window.location = 'loggedindex.php';
+		}
+	  else{
+		  console.log(response);
+		  alert('wrong identification');
+		  }
+	  }
     });
     return false;
   });
